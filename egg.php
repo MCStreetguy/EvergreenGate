@@ -26,6 +26,8 @@ if(preg_match($exp,$ua) > 0) {
       footer {
         position: absolute;
         bottom: 0;
+        left: 0;
+        right: 0;
         text-align: center;
       }
 
