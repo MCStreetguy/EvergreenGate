@@ -24,7 +24,9 @@ if(preg_match($exp,$ua) > 0) {
       }
 
       footer {
-
+        position: absolute;
+        bottom: 0;
+        text-align: center;
       }
 
       .mono {
