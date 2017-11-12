@@ -1,0 +1,3 @@
+setup:
+  shell:
+    - "chmod 777 deploy.sh && ./deploy.sh %BRANCH%"
