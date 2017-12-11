@@ -1,15 +1,28 @@
 <?php
 
+/**
+ * Expressions for matching browser type
+ */
 $BROWSERS = [
   "Chrome" => "/(chrome|crios)/i",
-  "Safari" => "/(safari)/i"
+  "Safari" => "/safari/i",
+  "Firefox" => "/firefox/i",
+  "IE" => "/(windows.*)?(msie|trident.*like Gecko)(.*windows)?/i"
 ];
 
+/**
+ * Expressions for matching engines
+ */
 $ENGINES = [];
 
+/**
+ * Expressions for version recognition
+ */
 $VERSIONS = [
   "Chrome" => "/(chrome|crios)\/([\d.]+)/i", // Group 2
-  "Safari" => "/version\/([\d.]+)/i"
+  "Safari" => "/version\/([\d.]+)/i",
+  "Firefox" => "/firefox\/([\d.]+)/i",
+  "IE" => "/(msie|rv) ([\d.]+)/i" // Group 2
 ];
 
 /*
