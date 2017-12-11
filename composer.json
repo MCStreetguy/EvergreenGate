@@ -1,0 +1,14 @@
+{
+    "name": "mcstreetguy/evergreen-gate",
+    "type": "library",
+    "require": {
+        "mobiledetect/mobiledetectlib": "^2.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maximilian Schmidt",
+            "email": "m.schmidt@obis-concept.de"
+        }
+    ]
+}
