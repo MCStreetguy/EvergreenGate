@@ -7,7 +7,7 @@ $BROWSERS = [
   "Chrome" => "/(chrome|crios)/i",
   "Safari" => "/safari/i",
   "Firefox" => "/firefox/i",
-  "IE" => "/(windows.*)?(msie|trident.*like Gecko)(.*windows)?/i",
+  "IE" => "/(windows.*)?(iemobile|msie|trident.*like Gecko)(.*windows)?/i",
   "Edge" => "/edge/i",
   "Opera" => "/opera/i"
 ];
@@ -30,7 +30,7 @@ $VERSIONS = [
   "Chrome" => "/(chrome|crios)\/([\d.]+)/i", // Group 2
   "Safari" => "/version\/([\d.]+)/i", // Group 1
   "Firefox" => "/firefox\/([\d.]+)/i", // Group 1
-  "IE" => "/(msie|rv) ([\d.]+)/i", // Group 2
+  "IE" => "/(msie|rv|iemobile)[ \/]([\d.]+)/i", // Group 2
   "Edge" => "/edge\/([\d.]+)/i", // Group 1
   "Opera" => "/version\/([\d.]+)/i", // Group 1
   "Bingbot" => "/bingbot\/([\d.]+)/i", // Group 1
