@@ -59,3 +59,11 @@ Windows Phone:
 Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; GW910)
 Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i917)
 Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 920)
+
+-----------
+
+Engines:
+Trident – for Internet Explorer
+EdgeHTML – for Microsoft Edge
+Gecko – for Firefox, Camino, K-Meleon, SeaMonkey, Netscape, and other Gecko-based browsers
+WebKit – for iOS (including both mobile Safari, WebViews within third-party apps, and web clips), Safari, Arora, Midori, OmniWeb (since version 5), Shiira, iCab since version 4, Web, SRWare Iron, Rekonq, Sleipnir, in Maxthon 3, and Google Chrome up to version 27

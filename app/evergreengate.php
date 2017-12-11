@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Expressions for matching browser type
+ * Expressions for matching browsers
  */
 $BROWSERS = [
   "Chrome" => "/(chrome|crios)/i",
@@ -15,8 +15,16 @@ $BROWSERS = [
 /**
  * Expressions for matching engines
  */
-$ENGINES = [];
+$ENGINES = [
+  "EdgeHTML" => "/(applewebkit).*(edge)/i",
+  "Trident" => "/(msie.*windows|trident)/i",
+  "Gecko" => "/gecko/i",
+  "WebKit" => "/applewebkit/i"
+];
 
+/**
+ * Expressions for matching bots
+ */
 $BOTS = [
   "Bingbot" => "/(bingbot|www\.bing\.com\/bingbot\.htm)/i",
   "Googlebot" => "/(googlebot|www\.googlebot\.com\/bot\.html)/i",
@@ -35,7 +43,11 @@ $VERSIONS = [
   "Opera" => "/version\/([\d.]+)/i", // Group 1
   "Bingbot" => "/bingbot\/([\d.]+)/i", // Group 1
   "Googlebot" => "/googlebot\/([\d.]+)/i", // Group 1
-  "Yahoobot" => "NONE" // Yahoo! Slurp doesn't expose it's version
+  "Yahoobot" => "NONE", // Yahoo! Slurp doesn't expose it's version
+  "EdgeHTML" => "NONE", // EdgeHTML exposes incorrect user agent data
+  "Trident" => "/trident\/([\d.]+)/i", // Group 1, may be unavailable in some cases
+  "Gecko" => "/gecko\/([\d.]+)/i", // Group 1,
+  "WebKit" => "/applewebkit\/([\d.]+)/i" // Group 1
 ];
 
 /*
@@ -44,7 +56,7 @@ $VERSIONS = [
 $CONF = [
   "mode" => ["blacklist","whitelist"],
   "action" => ["block","redirect","ignore"],
-  "log" => [true,false],
+  "log" => [true,false]
 ];
 
 /**
