@@ -1,7 +1,30 @@
 <?php
 
-$exp = '/(Trident|MSIE|Edge)/';
-$ua = getallheaders()['User-Agent'];
+$BROWSERS = [
+  "Chrome" => "/(chrome|crios)/i",
+  "Safari" => "/(safari)/i"
+];
+
+$ENGINES = [];
+
+$VERSIONS = [
+  "Chrome" => "/(chrome|crios)\/([\d.]+)/i", // Group 2
+  "Safari" => "/version\/([\d.]+)/i"
+];
+
+/*
+ * Possible base config values
+ */
+$CONF = [
+  "mode" => ["blacklist","whitelist"],
+  "action" => ["block","redirect","ignore"],
+  "log" => [true,false],
+];
+
+/**
+ * Required config values
+ */
+$REQUIRED = ["mode","action","log","rule"];
 
 if(preg_match($exp,$ua) > 0) {
 

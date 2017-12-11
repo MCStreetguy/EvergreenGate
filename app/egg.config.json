@@ -1,0 +1,9 @@
+{
+  "mode": "blacklist",
+  "action": "block",
+  "log": false,
+  "rule": [
+    "IE *",
+    "Edge < 13"
+  ]
+}
